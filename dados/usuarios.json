@@ -1,6 +1,809 @@
 {
     "admin": {
         "senha": "admin",
-        "saldo": 915.0
+        "saldo": 1990.0,
+        "historico_transacoes": [
+            {
+                "tipo": "Saque",
+                "valor": -20.0,
+                "data": "24/11/2025 18:18:26",
+                "saldo_apos": 935.0
+            },
+            {
+                "tipo": "Depósito",
+                "valor": 5.0,
+                "data": "24/11/2025 18:18:32",
+                "saldo_apos": 940.0
+            },
+            {
+                "tipo": "Saque",
+                "valor": -10.0,
+                "data": "24/11/2025 18:18:41",
+                "saldo_apos": 930.0
+            },
+            {
+                "tipo": "Depósito",
+                "valor": 80.0,
+                "data": "24/11/2025 18:18:49",
+                "saldo_apos": 1010.0
+            },
+            {
+                "tipo": "Saque",
+                "valor": -10.0,
+                "data": "24/11/2025 18:18:59",
+                "saldo_apos": 1000.0
+            },
+            {
+                "tipo": "Saque",
+                "valor": -10.0,
+                "data": "24/11/2025 18:26:36",
+                "saldo_apos": 990.0
+            },
+            {
+                "tipo": "Saque",
+                "valor": -10.0,
+                "data": "24/11/2025 18:33:08",
+                "saldo_apos": 980.0
+            },
+            {
+                "tipo": "Depósito",
+                "valor": 5.0,
+                "data": "24/11/2025 18:33:14",
+                "saldo_apos": 985.0
+            },
+            {
+                "tipo": "Saque",
+                "valor": -10.0,
+                "data": "24/11/2025 18:33:17",
+                "saldo_apos": 975.0
+            },
+            {
+                "tipo": "Depósito",
+                "valor": 5.0,
+                "data": "24/11/2025 19:55:13",
+                "saldo_apos": 980.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 19:55:16",
+                "saldo_apos": 970.0
+            },
+            {
+                "tipo": "Ganho",
+                "valor": 80.0,
+                "data": "24/11/2025 19:55:24",
+                "saldo_apos": 1050.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 19:55:46",
+                "saldo_apos": 1040.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -50.0,
+                "data": "24/11/2025 19:59:28",
+                "saldo_apos": 990.0
+            },
+            {
+                "tipo": "Ganho",
+                "valor": 1000.0,
+                "data": "24/11/2025 19:59:36",
+                "saldo_apos": 1990.0
+            }
+        ],
+        "historico_jogadas": [
+            {
+                "aposta": 10.0,
+                "premio": 80.0,
+                "lucro": 70.0,
+                "simbolos": [
+                    "Melancia",
+                    "Leão",
+                    "Melancia"
+                ],
+                "data": "24/11/2025 18:18:49"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Melancia",
+                    "Cereja",
+                    "Uva"
+                ],
+                "data": "24/11/2025 18:19:06"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Sino",
+                    "Leão",
+                    "Limão"
+                ],
+                "data": "24/11/2025 18:33:24"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 80.0,
+                "lucro": 70.0,
+                "simbolos": [
+                    "Leão",
+                    "Melancia",
+                    "Melancia"
+                ],
+                "data": "24/11/2025 19:55:24"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Uva",
+                    "Estrela",
+                    "Leão"
+                ],
+                "data": "24/11/2025 19:55:54"
+            },
+            {
+                "aposta": 50.0,
+                "premio": 1000.0,
+                "lucro": 950.0,
+                "simbolos": [
+                    "Sino",
+                    "Leão",
+                    "Leão"
+                ],
+                "data": "24/11/2025 19:59:36"
+            }
+        ],
+        "chave_pix": ""
+    },
+    "joaozinho": {
+        "senha": "123456",
+        "saldo": 0.0,
+        "nome_completo": "João Monteiro",
+        "cpf": "13713722245",
+        "email": "ala@gmail.com",
+        "telefone": "31998861941",
+        "chave_pix": "13713725567",
+        "historico_transacoes": [
+            {
+                "tipo": "Saque",
+                "valor": -100.0,
+                "data": "24/11/2025 18:44:17",
+                "saldo_apos": 0.0
+            }
+        ],
+        "historico_jogadas": []
+    },
+    "lalala": {
+        "senha": "lalala",
+        "saldo": 1480.0,
+        "nome_completo": "lalala",
+        "cpf": "12312312312",
+        "email": "lalala@gmail.com",
+        "telefone": "123123123123",
+        "chave_pix": "",
+        "historico_transacoes": [
+            {
+                "tipo": "Depósito",
+                "valor": 50.0,
+                "data": "24/11/2025 18:50:16",
+                "saldo_apos": 60.0
+            },
+            {
+                "tipo": "Saque",
+                "valor": -10.0,
+                "data": "24/11/2025 18:50:23",
+                "saldo_apos": 50.0
+            },
+            {
+                "tipo": "Depósito",
+                "valor": 20.0,
+                "data": "24/11/2025 18:50:31",
+                "saldo_apos": 70.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:09:21",
+                "saldo_apos": 60.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:09:29",
+                "saldo_apos": 50.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:09:37",
+                "saldo_apos": 40.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:09:54",
+                "saldo_apos": 30.0
+            },
+            {
+                "tipo": "Ganho",
+                "valor": 200.0,
+                "data": "24/11/2025 20:09:54",
+                "saldo_apos": 230.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:11:49",
+                "saldo_apos": 220.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:14:30",
+                "saldo_apos": 210.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:14:37",
+                "saldo_apos": 200.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:14:44",
+                "saldo_apos": 190.0
+            },
+            {
+                "tipo": "Ganho",
+                "valor": 100.0,
+                "data": "24/11/2025 20:14:44",
+                "saldo_apos": 290.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:15:25",
+                "saldo_apos": 280.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:15:32",
+                "saldo_apos": 270.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:15:38",
+                "saldo_apos": 260.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:15:44",
+                "saldo_apos": 250.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:15:50",
+                "saldo_apos": 240.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:15:55",
+                "saldo_apos": 230.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:16:01",
+                "saldo_apos": 220.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:16:07",
+                "saldo_apos": 210.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:16:12",
+                "saldo_apos": 200.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:16:18",
+                "saldo_apos": 190.0
+            },
+            {
+                "tipo": "Ganho",
+                "valor": 200.0,
+                "data": "24/11/2025 20:16:18",
+                "saldo_apos": 390.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:18:10",
+                "saldo_apos": 380.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:18:16",
+                "saldo_apos": 370.0
+            },
+            {
+                "tipo": "Ganho",
+                "valor": 150.0,
+                "data": "24/11/2025 20:18:16",
+                "saldo_apos": 520.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:19:09",
+                "saldo_apos": 510.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:19:14",
+                "saldo_apos": 500.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:19:20",
+                "saldo_apos": 490.0
+            },
+            {
+                "tipo": "Ganho",
+                "valor": 200.0,
+                "data": "24/11/2025 20:19:20",
+                "saldo_apos": 690.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:20:48",
+                "saldo_apos": 680.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:20:56",
+                "saldo_apos": 670.0
+            },
+            {
+                "tipo": "Ganho",
+                "valor": 200.0,
+                "data": "24/11/2025 20:20:56",
+                "saldo_apos": 870.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:21:39",
+                "saldo_apos": 860.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:21:45",
+                "saldo_apos": 850.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:22:01",
+                "saldo_apos": 840.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -100.0,
+                "data": "24/11/2025 20:24:03",
+                "saldo_apos": 740.0
+            },
+            {
+                "tipo": "Ganho",
+                "valor": 750.0,
+                "data": "24/11/2025 20:24:03",
+                "saldo_apos": 1490.0
+            },
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "25/11/2025 00:10:37",
+                "saldo_apos": 1480.0
+            }
+        ],
+        "historico_jogadas": [
+            {
+                "aposta": 10.0,
+                "premio": 20.0,
+                "lucro": 10.0,
+                "simbolos": [
+                    "Cereja",
+                    "Laranja",
+                    "Cereja"
+                ],
+                "data": "24/11/2025 18:50:31"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Uva",
+                    "Cereja",
+                    "Laranja"
+                ],
+                "data": "24/11/2025 20:09:21"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Sino",
+                    "Cereja",
+                    "Leão"
+                ],
+                "data": "24/11/2025 20:09:29"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Leão",
+                    "Uva",
+                    "Laranja"
+                ],
+                "data": "24/11/2025 20:09:37"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 200.0,
+                "lucro": 190.0,
+                "simbolos": [
+                    "Melancia",
+                    "Leão",
+                    "Leão"
+                ],
+                "data": "24/11/2025 20:09:54"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Limão",
+                    "Uva",
+                    "Leão"
+                ],
+                "data": "24/11/2025 20:11:49"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Laranja",
+                    "Sino",
+                    "Melancia"
+                ],
+                "data": "24/11/2025 20:14:30"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Leão",
+                    "Estrela",
+                    "Sino"
+                ],
+                "data": "24/11/2025 20:14:37"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 100.0,
+                "lucro": 90.0,
+                "simbolos": [
+                    "Estrela",
+                    "Leão",
+                    "Estrela"
+                ],
+                "data": "24/11/2025 20:14:44"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Leão",
+                    "Uva",
+                    "Estrela"
+                ],
+                "data": "24/11/2025 20:15:25"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Melancia",
+                    "Leão",
+                    "Laranja"
+                ],
+                "data": "24/11/2025 20:15:32"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Leão",
+                    "Limão",
+                    "Melancia"
+                ],
+                "data": "24/11/2025 20:15:38"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Estrela",
+                    "Melancia",
+                    "Limão"
+                ],
+                "data": "24/11/2025 20:15:44"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Uva",
+                    "Leão",
+                    "Limão"
+                ],
+                "data": "24/11/2025 20:15:50"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Melancia",
+                    "Diamante",
+                    "Uva"
+                ],
+                "data": "24/11/2025 20:15:55"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Laranja",
+                    "Uva",
+                    "Cereja"
+                ],
+                "data": "24/11/2025 20:16:01"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Cereja",
+                    "Leão",
+                    "Laranja"
+                ],
+                "data": "24/11/2025 20:16:07"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Sino",
+                    "Limão",
+                    "Estrela"
+                ],
+                "data": "24/11/2025 20:16:13"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 200.0,
+                "lucro": 190.0,
+                "simbolos": [
+                    "Leão",
+                    "Melancia",
+                    "Leão"
+                ],
+                "data": "24/11/2025 20:16:18"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Melancia",
+                    "Laranja",
+                    "Leão"
+                ],
+                "data": "24/11/2025 20:18:10"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 150.0,
+                "lucro": 140.0,
+                "simbolos": [
+                    "Sino",
+                    "Sino",
+                    "Sino"
+                ],
+                "data": "24/11/2025 20:18:16"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Leão",
+                    "Cereja",
+                    "Sino"
+                ],
+                "data": "24/11/2025 20:19:09"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Leão",
+                    "Melancia",
+                    "Cereja"
+                ],
+                "data": "24/11/2025 20:19:14"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 200.0,
+                "lucro": 190.0,
+                "simbolos": [
+                    "Leão",
+                    "Limão",
+                    "Leão"
+                ],
+                "data": "24/11/2025 20:19:20"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Estrela",
+                    "Leão",
+                    "Cereja"
+                ],
+                "data": "24/11/2025 20:20:48"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 200.0,
+                "lucro": 190.0,
+                "simbolos": [
+                    "Leão",
+                    "Leão",
+                    "Estrela"
+                ],
+                "data": "24/11/2025 20:20:56"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Diamante",
+                    "Limão",
+                    "Sino"
+                ],
+                "data": "24/11/2025 20:21:39"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Estrela",
+                    "Uva",
+                    "Laranja"
+                ],
+                "data": "24/11/2025 20:21:45"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Leão",
+                    "Sino",
+                    "Estrela"
+                ],
+                "data": "24/11/2025 20:22:01"
+            },
+            {
+                "aposta": 100.0,
+                "premio": 750.0,
+                "lucro": 650.0,
+                "simbolos": [
+                    "Limão",
+                    "Limão",
+                    "Limão"
+                ],
+                "data": "24/11/2025 20:24:03"
+            },
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Estrela",
+                    "Limão",
+                    "Diamante"
+                ],
+                "data": "25/11/2025 00:10:37"
+            }
+        ]
+    },
+    "lelele": {
+        "senha": "lelele",
+        "saldo": 0.0,
+        "nome_completo": "lelele",
+        "cpf": "15453318635",
+        "email": "lelele@lelele.com",
+        "telefone": "12345678910",
+        "chave_pix": "",
+        "historico_transacoes": [
+            {
+                "tipo": "Apostado",
+                "valor": -10.0,
+                "data": "24/11/2025 20:33:38",
+                "saldo_apos": 0.0
+            }
+        ],
+        "historico_jogadas": [
+            {
+                "aposta": 10.0,
+                "premio": 0,
+                "lucro": -10.0,
+                "simbolos": [
+                    "Uva",
+                    "Sino",
+                    "Estrela"
+                ],
+                "data": "24/11/2025 20:33:38"
+            }
+        ]
     }
 }
