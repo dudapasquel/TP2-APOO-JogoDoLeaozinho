@@ -1,8 +1,3 @@
-"""
-Pacote backend do Jogo do Leãozinho.
-Contém toda a lógica de negócio e classes do jogo.
-"""
-
 from .simbolo import Simbolo
 from .simbolo_comum import SimboloComum
 from .simbolo_especial import SimboloEspecial
