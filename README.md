@@ -9,35 +9,69 @@ Simulador de jogo de caça-níquel desenvolvido em Python para a disciplina de P
 - 🎨 **Interface Gráfica Moderna** com CustomTkinter
 - 🎰 **3 Roletas Animadas** com efeitos visuais
 - 💾 **Sistema de Persistência** em JSON
-- 🔐 **Login e Cadastro** de usuários
-- 💰 **Gerenciamento de Saldo** com validações
+- 🔐 **Login e Cadastro** de usuários com validações
+- ⚠️ **Tela de Aviso** sobre jogo responsável
+- 💰 **Gerenciamento de Saldo** (depósito e saque)
+- 💳 **Sistema de Saque PIX** integrado
+- ✅ **Validações** de CPF, email e telefone
 - 🦁 **Leão como Coringa** (símbolo especial)
 - 💎 **Jackpot de Diamantes** (150x)
-- 📊 **Tabela de Prêmios** interativa
-- 🎁 **Bônus de Boas-vindas** R$ 100
+- 📊 **Tabela de Prêmios** interativa e detalhada
+- 📜 **Histórico** de transações e jogadas
+- 🎁 **Bônus de Boas-vindas** R$ 10,0000
 
 ## 🎯 Tema do Projeto
 
 O projeto é um **simulador de jogo de caça-níquel de 3 roletas**, inspirado em jogos de apostas populares como o "Jogo do Tigrinho". A aplicação simula uma casa de apostas onde o usuário pode:
-- ✅ Criar cadastro e fazer login com interface gráfica moderna
-- ✅ Gerenciar saldo virtual (adicionar créditos)
-- ✅ Fazer apostas e jogar com animações fluidas
-- ✅ Visualizar tabela de prêmios interativa
-- ✅ Sistema de salvamento automático
+- ✅ Criar cadastro completo com validações de CPF, email e telefone
+- ✅ Fazer login com interface gráfica moderna
+- ✅ Ler aviso de jogo responsável antes de começar
+- ✅ Gerenciar saldo virtual (depositar e sacar via PIX)
+- ✅ Fazer apostas e jogar com animações GIF fluidas
+- ✅ Visualizar tabela de prêmios interativa e detalhada
+- ✅ Consultar histórico de transações e jogadas
+- ✅ Sistema de salvamento automático em JSON
 
 ## 🖼️ Preview da Interface
+
+### Tela de Aviso
+- Mensagem de jogo responsável obrigatória
+- Avisos sobre riscos do jogo
+- Confirmação de maioridade
+- Design impactante com tema escuro
 
 ### Tela de Login
 - Design moderno com tema escuro
 - Campos estilizados para usuário e senha
 - Botões de login e cadastro
 - Validação em tempo real
+- Mensagem de bônus de R$10,00 para novos usuários
+
+### Tela de Cadastro
+- Formulário completo com rolagem
+- Campos: nome completo, CPF, email, telefone, usuário e senha
+- Validações em tempo real (CPF com verificação de dígitos)
+- Design responsivo e moderno
 
 ### Tela Principal
-- **Cabeçalho**: Nome do usuário, saldo e botão de depósito
-- **Roletas**: 3 roletas animadas com símbolos coloridos
-- **Controles**: Botões +/- para ajustar aposta e botão GIRAR em destaque
-- **Rodapé**: Acesso à tabela de prêmios e opção de sair
+- **Cabeçalho**: Nome do usuário, saldo e botões de depósito/saque
+- **Roletas**: 3 roletas animadas com símbolos coloridos (imagens PNG)
+- **Controles**: Botões +/- para ajustar aposta (R$5 a R$100) e botão GIRAR
+- **Rodapé**: Acesso à tabela de prêmios, histórico e opção de sair
+
+### Tela de Saque
+- Sistema integrado com PIX
+- Validação de chave PIX contra dados cadastrados
+- Saldo mínimo: R$50,00
+- Proteção contra saques para terceiros
+- Confirmação com resumo da operação
+
+### Tela de Histórico
+- Abas: Transações e Jogadas
+- **Transações**: depósitos, saques, apostas e ganhos
+- **Jogadas**: símbolos sorteados, valores e lucro/prejuízo
+- Últimas 20 operações de cada tipo
+- Interface organizada em tabela
 
 ### Animação das Roletas
 - Giro suave de 2 segundos
@@ -48,14 +82,14 @@ O projeto é um **simulador de jogo de caça-níquel de 3 roletas**, inspirado e
 ## 🏗️ Conceitos de POO Implementados
 
 ### 1. **Classes**
-- **`Usuario`**: Representa o jogador, armazenando nome, senha e saldo
+- **`Usuario`**: Representa o jogador com dados completos (nome, senha, CPF, email, telefone, chave PIX, saldo, históricos)
 - **`Roleta`**: Representa uma roleta individual com símbolos e método de girar
 - **`Simbolo`**: Classe base abstrata para símbolos do jogo
 - **`SimboloComum`**: Símbolos regulares (frutas, letras) com multiplicadores menores
 - **`SimboloEspecial`**: Símbolos especiais (Leão, Diamante) com multiplicadores maiores
 - **`Maquina`**: Classe principal que gerencia 3 roletas e a lógica do jogo
-- **`SistemaAutenticacao`**: Gerencia cadastro e login de usuários
-- **`JogoDoLeaozinho`**: Controla o fluxo e interface do jogo
+- **`SistemaAutenticacao`**: Gerencia cadastro, login e persistência de dados em JSON
+- **`AplicacaoJogo`**: Controla o fluxo, interface gráfica e todas as telas do jogo
 
 ### 2. **Herança**
 Hierarquia de símbolos implementada:
@@ -148,37 +182,42 @@ python -m pip install -r requirements.txt
 ```bash
 # Interface Gráfica (CustomTkinter)
 python main.py
-
-# Ou interface de linha de comando
-python frontend/main_cli.py
 ```
 
 ### Primeiro Acesso
 1. Execute o programa
-2. Clique em "Criar Nova Conta"
-3. Digite usuário e senha
-4. Faça login
-5. Você receberá R$ 100 de bônus de boas-vindas!
-6. Clique em "🎰 GIRAR" e boa sorte!
+2. Leia e aceite o aviso de jogo responsável
+3. Clique em "📝 CADASTRAR"
+4. Preencha todos os campos (nome completo, CPF, email, telefone, usuário, senha)
+5. O sistema validará CPF, email e telefone automaticamente
+6. Após cadastro, você receberá R$ 10,00 de bônus de boas-vindas!
+7. Na tela do jogo, ajuste sua aposta (R$5 a R$100)
+8. Clique em "🦁 GIRAR 🦁" e boa sorte!
+9. Consulte a tabela de prêmios para entender as combinações
+10. Para sacar, você precisa ter no mínimo R$50,00
 
 ## 💰 Tabela de Prêmios
 
 ### Símbolos Comuns
-| Símbolo | Nome | 2 Iguais | 3 Iguais |
-|---------|------|----------|----------|
-| 🍒 | Cereja | 2x | 6x |
-| 🍋 | Limão | 2.5x | 7.5x |
-| 🍊 | Laranja | 3x | 9x |
-| 🍇 | Uva | 3.5x | 10.5x |
-| 🍉 | Melancia | 4x | 12x |
-| 🔔 | Sino | 5x | 15x |
-| ⭐ | Estrela | 5x | 15x |
+| Símbolo | Nome | Multiplicador Base | 2 Iguais | 3 Iguais |
+|---------|------|--------------------|----------|----------|
+| 🍒 | Cereja | 2.0x | 2x | 6x |
+| 🍋 | Limão | 2.5x | 2.5x | 7.5x |
+| 🍊 | Laranja | 3.0x | 3x | 9x |
+| 🍇 | Uva | 3.5x | 3.5x | 10.5x |
+| 🍉 | Melancia | 4.0x | 4x | 12x |
+| 🔔 | Sino | 5.0x | 5x | 15x |
+| ⭐ | Estrela | 5.0x | 5x | 15x |
+
+**Regras de Pagamento:**
+- 3 símbolos iguais = multiplicador × 3
+- 2 símbolos iguais = multiplicador × 1
 
 ### Símbolos Especiais
-| Símbolo | Nome | 2 Iguais | 3 Iguais | Especial |
-|---------|------|----------|----------|----------|
-| 🦁 | Leão | 20x | 60x | Funciona como CORINGA |
-| 💎 | Diamante | 50x | 150x | JACKPOT MÁXIMO |
+| Símbolo | Nome | Multiplicador Base | 2 Iguais | 3 Iguais | Especial |
+|---------|------|--------------------|----------|----------|----------|
+| 🦁 | Leão | 20.0x | 20x | 60x | Funciona como CORINGA (combina com qualquer símbolo para bônus 2x) |
+| 💎 | Diamante | 50.0x | 50x | 150x | JACKPOT MÁXIMO (símbolo raro) |
 
 ## 📁 Estrutura do Projeto
 
@@ -187,35 +226,41 @@ TP2-APOO-JogoDoLeaozinho/
 │
 ├── backend/                    # Lógica de negócio
 │   ├── __init__.py
-│   ├── simbolo.py             # Classes Simbolo (Abstração + Herança)
+│   ├── simbolo.py             # Classe abstrata Simbolo
+│   ├── simbolo_comum.py       # Classe SimboloComum (Herança)
+│   ├── simbolo_especial.py    # Classe SimboloEspecial (Herança)
 │   ├── usuario.py             # Classe Usuario (Encapsulamento)
 │   ├── roleta.py              # Classe Roleta
 │   ├── maquina.py             # Classe Maquina (Polimorfismo)
-│   ├── autenticacao.py        # Sistema de login
-│   └── teste.py               # Testes automáticos
+│   ├── autenticacao.py        # Sistema de login e persistência
+│   ├── diagrama_classes.puml  # Diagrama UML PlantUML
+│   └── teste.py               # Testes manuais
 │
 ├── frontend/                   # Interface de usuário
-│   ├── __init__.py
-│   ├── main_gui.py            # Interface gráfica (CustomTkinter)
-│   └── main_cli.py            # Interface de linha de comando
+│   └── main_gui.py            # Interface gráfica completa (CustomTkinter)
 │
 ├── dados/                      # Persistência de dados
 │   └── usuarios.json          # Dados dos usuários (gerado automaticamente)
 │
 ├── assets/                     # Recursos visuais
-│   └── simbolos/              # Imagens dos símbolos (PNG)
-│       ├── cereja.png
-│       ├── limao.png
-│       ├── leao.png
-│       └── ... (outros símbolos)
+│   ├── simbolos/              # Imagens dos símbolos (PNG)
+│   │   ├── cereja.png
+│   │   ├── limao.png
+│   │   ├── laranja.png
+│   │   ├── uva.png
+│   │   ├── melancia.png
+│   │   ├── sino.png
+│   │   ├── estrela.png
+│   │   ├── leao.png
+│   │   ├── diamante.png
+│   │   └── loading.png
+│   └── roleta_girando.gif     # Animação das roletas (opcional)
 │
 ├── main.py                     # Ponto de entrada principal
-├── gerar_simbolos.py          # Script para gerar imagens
 ├── requirements.txt           # Dependências do projeto
-├── README.md                  # Este arquivo
-├── CONCEITOS_POO.md           # Documentação dos conceitos
-├── INSTALACAO.md              # Instruções de instalação
-└── EXEMPLOS.md                # Exemplos de uso
+├── DiagramaUML.png            # Diagrama de classes exportado
+├── .gitignore                 # Arquivos ignorados pelo Git
+└── README.md                  # Este arquivo
 ```
 
 ## 🛠️ Tecnologias Utilizadas
@@ -241,30 +286,22 @@ TP2-APOO-JogoDoLeaozinho/
 
 Projeto desenvolvido para a disciplina de Programação Orientada a Objetos.
 
-## 📖 Documentação Adicional
-
-Este projeto conta com documentação completa e detalhada:
-
-- **📘 INICIO_RAPIDO.md** - Guia rápido para começar a jogar em 3 passos
-- **📗 CONCEITOS_POO.md** - Explicação detalhada de cada conceito de POO com exemplos
-- **📕 INTERFACE_GUI.md** - Documentação técnica da interface CustomTkinter
-- **📙 EXEMPLOS.md** - Casos de uso e exemplos práticos do código
-- **📔 INSTALACAO.md** - Instruções detalhadas de instalação do Python
-
 ## 🎮 Início Rápido
 
 ```bash
-# 1. Instalar Python
+# 1. Instalar Python 3.12+
 winget install Python.Python.3.12
 
-# 2. Instalar dependências
+# 2. Clonar o repositório
+git clone https://github.com/dudapasquel/TP2-APOO-JogoDoLeaozinho.git
+cd TP2-APOO-JogoDoLeaozinho
+
+# 3. Instalar dependências
 python -m pip install -r requirements.txt
 
-# 3. Jogar!
+# 4. Jogar!
 python main.py
 ```
-
-Consulte **INICIO_RAPIDO.md** para instruções detalhadas!
 
 ## 📝 Licença
 
